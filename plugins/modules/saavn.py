@@ -18,7 +18,7 @@ START_MESSAGE = """
 ʜᴇʟʟᴏ <a href='tg://settings'>ᴛʜᴀɴᴋ ʏᴏᴜ</a>
 <i>📌You can get the song you want only if you ask in the group without spelling it wrong...!! \n\n
 
-ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴊᴏɪɴ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ <a href='http://t.me/movie7xchat'>ᴄʟɪᴄᴋ</a>
+ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴊᴏɪɴ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ <a href='http://t.me/LUCI_MOVIES'>ᴄʟɪᴄᴋ</a>
 
 
 𝐅𝐨𝐫 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 :-
@@ -71,10 +71,10 @@ async def video(client, message):
     ffile = file.replace("mp3", "mp4")
     os.rename(file, ffile)
     buttons = [[
-        InlineKeyboardButton("ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴊᴏɪɴ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ", url="https://t.me/movie7xchat")
+        InlineKeyboardButton("ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴊᴏɪɴ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ", url="https://t.me/LUCI_MOVIES")
     ]]                           
     await message.reply_video(
-    video=ffile, caption=f"[{sname}]({r['data']['results'][0]['url']}) - from @team_netflix ",thumb=thumbnail,
+    video=ffile, caption=f"[{sname}]({r['data']['results'][0]['url']}) - from @LUCI_MOVIES ",thumb=thumbnail,
     reply_markup=InlineKeyboardMarkup(buttons)
 )
     await message.reply_text(text="download flac song @flac_english")
@@ -125,7 +125,7 @@ async def song(client, message):
 async def r_message(client, message):
     mention = message.from_user.mention
     buttons = [[
-        InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐆𝐫𝐨𝐮𝐩', url=f'http://t.me/movie7xchat')
+        InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐆𝐫𝐨𝐮𝐩', url=f'http://t.me/LUCI_MOVIES')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply_text(START_MESSAGE.format(message.from_user.mention, message.chat.title),
