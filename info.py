@@ -41,6 +41,10 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/549fd9f3272214acade
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/347c1f79f36d3cf14e0f5.jpg'))
 CODE = (environ.get('CODE', 'https://telegra.ph/file/def284d991edabc59600a.jpg'))
 
+# Save Restricted Info : If True Then Bot Save Content From Restricted Channel Else Not
+SAVE_RESTRICTED_MODE = bool(environ.get('SAVE_RESTRICTED_MODE', False)) # Set True or False
+
+PM_SEARCH = bool(environ.get('PM_SEARCH', True))
 
 # Command
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
